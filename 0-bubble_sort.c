@@ -2,7 +2,7 @@
 /**
  * bubble_sort - function that sorts an array using the bubble sort method
  * @array: unsorted array
- * @length: length of the array to be sorted
+ * @size: length of the array to be sorted
  */
 void bubble_sort(int *array, size_t size)
 {
