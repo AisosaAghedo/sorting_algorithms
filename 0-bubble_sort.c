@@ -4,16 +4,16 @@
  * @array: unsorted array
  * @length: length of the array to be sorted
  */
-void bubble_sort(int *array, size_t length)
+void bubble_sort(int *array, size_t size)
 {
 	size_t i, checker, temp;
 
-	if (length < 2 || array == NULL)
+	if (size < 2 || array == NULL)
 		return;
 	while (1)
 	{
 		checker = 0;
-		for (i = 0; i < length - 1; i++)
+		for (i = 0; i < size - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
@@ -21,7 +21,7 @@ void bubble_sort(int *array, size_t length)
 				array[i] = array[i + 1];
 				array[i + 1] = temp;
 				checker = 1;
-				print_array(array, length);
+				print_array(array, size);
 			}
 		}
 		if (checker == 0)
